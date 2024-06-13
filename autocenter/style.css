@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 70px;
+    padding: 5px 10%;
+    transition: 0.7s;
+    z-index: 100;
+}
+
+header.abajo{
+    background: #fff;
+    padding: 15px 50px;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 100px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .nav-links{
+    list-style: none;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links a{
+    font-size: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .nav-links li a:hover{
+    color: rgb(226, 202, 65);
+}
+
+header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header .btn button:hover{
+    background-color: #e2f1f8;
+    color:  rgb(226, 202, 65);
+    transform: scale(1.1);
+
+}
+header.abajo nav ul li a{
+    color: #000;
+}
+header.abajo .logo img{
+    filter: invert(100%) sepia(80%) saturate(4%) hue-rotate(174deg) brightness(98%) contrast(100%);
+}
+header.abajo .btn button {
+    background: #1c1c1c;
+    color: #eceff1;
+}
+.zona1 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("img/fondo2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.zona1 .info img{
+    width: 700px;
+    margin-left: 19%;
+    margin-top: -310px; 
+    transition: all 0.4s;
+}
+
+.zona1 .info img:hover{
+    transform: scale(1.1);
+}
+
+.zona1 .info {
+    color: #fff;
+    position: relative;
+    top: 200px;
+    left: 11%;
+}
+
+
+.zona1 .info .button {
+    top: -100px;
+    padding: 1em 2em;
+    background-color: #2361a000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+  }
+  
+.zona1 .info  button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #ffffff;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+.zona1 .info button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2362A0;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+.zona1 .info  button:hover::before {
+    width: 250%;
+  }
+  
+main {
+    position: relative;
+    justify-content: center;
+}
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+main .info2 {
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+main hr {
+    width: 500px;
+    margin: auto;
+}
